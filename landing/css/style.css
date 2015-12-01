@@ -1,0 +1,57 @@
+html,
+body,
+.wrapper {
+	height: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 80px;
+	background-color: #eee;
+	position: relative;
+}
+
+.header .logo {
+	font-size: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	font-style: italic;
+	position: absolute;
+	left: 80px;
+	top: 30px;
+}
+
+.promo {
+	background-color: #eee;
+	padding-bottom: 30px;
+	padding-top: 24px;
+}
+
+.promo .description {
+	padding-left: 80px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.promo .description p {
+	line-height: 24px;
+	font-size: 16px;
+	margin-bottom: 24px;
+}
