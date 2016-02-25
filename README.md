@@ -1,2 +1,0 @@
-# barbados
-Project Barbados

@@ -33,9 +33,10 @@
 <?php echo $content; ?>
 			</div>
 			<footer id="footer">
-				<?php echo l('copyright', TRAQ_VER, date("Y")); ?>
+				<?php echo round((microtime(true) - START_TIME), 2); ?>s, <?php echo round((memory_get_peak_usage() - START_MEM) / pow(1024, 2), 3); ?>mb
 			</footer>
-			<!-- <?php echo round((microtime(true) - START_TIME), 2); ?>s, <?php echo round((memory_get_peak_usage() - START_MEM) / pow(1024, 2), 3); ?>mb -->
+			<!-- <?php echo l('copyright', TRAQ_VER, date("Y")); ?> -->
+			<?php echo View::render('includes/ga'); ?>
 		</div>
 	</body>
 </html>
