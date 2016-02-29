@@ -55,7 +55,7 @@ class ruRU extends \traq\libraries\Locale
             'milestones'       => "Milestones",
             'components'       => "Компоненты",
             'project_settings' => "Настройка проекта",
-            'name'             => "ФИО",
+            'name'             => "Имя",
             'slug'             => "Ссылка",
             'codename'         => "Кодовое имя",
             'open'             => "Открыто",
@@ -103,7 +103,7 @@ class ruRU extends \traq\libraries\Locale
             'renew'            => "Обновить",
             'preview'          => "Предпросмотр",
             'continue'         => "Продолжить",
-            'filter_events'    => "Filter events",
+            'filter_events'    => "Фильтр событий",
             'done'             => "Сделано",
             'profile'          => "Профиль",
             'ascending'        => "По возрастанию",
@@ -293,7 +293,7 @@ class ruRU extends \traq\libraries\Locale
 
             // Pagination
             'previous' => "Назад",
-            'next'     => "Дальше",
+            'next'     => "Вперед",
 
             // Other
             'actions' => "Действия",
@@ -303,33 +303,33 @@ class ruRU extends \traq\libraries\Locale
             'delete'  => "Удалить",
 
             // Permissions
-            'group_permissions' => "Group Permissions",
-            'role_permissions'  => "Role Permissions",
-            'ticket_properties' => "Ticket Properties",
-            'action'            => "Action",
-            'defaults'          => "Defaults",
-            'allow'             => "Allow",
-            'deny'              => "Deny",
+            'group_permissions' => "Права групп",
+            'role_permissions'  => "Права ролей",
+            'ticket_properties' => "Свойства заявки",
+            'action'            => "Действия",
+            'defaults'          => "По умолчанию",
+            'allow'             => "Разрешить",
+            'deny'              => "Запретить",
             'permissions' => array(
                 // Projects
-                'view'                   => "View",
-                'project_settings'       => "Project Settings",
-                'delete_timeline_events' => "Delete timeline events",
+                'view'                   => "Просмотр",
+                'project_settings'       => "Настройки проекта",
+                'delete_timeline_events' => "Удаление событий таймлайна",
 
                 // Tickets
                 'tickets' => array(
-                    'view_tickets'              => "View",
-                    'create_tickets'            => "Create",
-                    'update_tickets'            => "Update",
-                    'delete_tickets'            => "Delete",
-                    'move_tickets'              => "Move tickets",
-                    'vote_on_tickets'           => "Vote",
-                    'comment_on_tickets'        => "Comment",
-                    'edit_ticket_description'   => "Edit description",
-                    'add_attachments'           => "Add attachments",
-                    'view_attachments'          => "View attachments",
-                    'delete_attachments'        => "Delete attachments",
-                    'perform_mass_actions'      => "Perform mass actions",
+                    'view_tickets'              => "Просмотр",
+                    'create_tickets'            => "Создание",
+                    'update_tickets'            => "Обвноление",
+                    'delete_tickets'            => "Удаление",
+                    'move_tickets'              => "Передвижение",
+                    'vote_on_tickets'           => "Голосование",
+                    'comment_on_tickets'        => "Комментирование",
+                    'edit_ticket_description'   => "Редактирование описания",
+                    'add_attachments'           => "Добавление прикреплений",
+                    'view_attachments'          => "Просмотр прикреплений",
+                    'delete_attachments'        => "Удаление прикреплений",
+                    'perform_mass_actions'      => "Массовое редактирование",
 
                     // Ticket History
                     'edit_ticket_history'   => "Edit history",
@@ -392,28 +392,29 @@ class ruRU extends \traq\libraries\Locale
             'time.x_year'   => "{1} {plural:{1}, {year|years}}",
 
             // Timeline
-            'timeline'                     => "История",
-            'timeline.ticket_created'      => "Создана заявка №{ticket_id} \"{ticket_summary}\"",
-            'timeline.ticket_closed'       => "Закрыта заявка №{ticket_id} \"{ticket_summary}\" - {ticket_status_name}",
-            'timeline.ticket_reopened'     => "Переоткрыта заявка №{ticket_id} \"{ticket_summary}\" - {ticket_status_name}",
-            'timeline.ticket_updated'      => "Обновлена заявка №{ticket_id} \"{ticket_summary}\"", // {ticket_type_name}
-            'timeline.ticket_comment'      => "Commented on ticket {link}",
+            'timeline'                     => "Таймлайн",
+            'timeline.ticket_created'      => "Создана заявка №{ticket_id} {ticket_link}",
+            'timeline.ticket_closed'       => "Закрыта заявка №{ticket_id} {ticket_link} - {ticket_status_name}",
+            'timeline.ticket_reopened'     => "Переоткрыта заявка №{ticket_id} {ticket_link} - {ticket_status_name}",
+            'timeline.ticket_updated'      => "Обновлена заявка №{ticket_id} {ticket_link}", // {ticket_type_name}
+
+            'timeline.ticket_comment'      => "Новый комментарий к зайявке {link}",
             'timeline.milestone_completed' => "Milestone {milestone_name} completed",
             'timeline.milestone_cancelled' => "Milestone {milestone_name} cancelled",
-            'timeline.ticket_moved_from'   => "Заявка \"{ticket}\" перенесена из проекта {project}",
-            'timeline.ticket_moved_to'     => "Заявка \"{ticket}\" перенесена в проект {project}",
-            'timeline.wiki_page_created'   => "Created {title} wiki page",
-            'timeline.wiki_page_edited'    => "Edited {title} wiki page",
+            'timeline.ticket_moved_from'   => "Заявка {ticket} перенесена из проекта {project}",
+            'timeline.ticket_moved_to'     => "Заявка {ticket} перенесена в проект {project}",
+            'timeline.wiki_page_created'   => "Создана страница вики {title}",
+            'timeline.wiki_page_edited'    => "Внесены изменения в страницу вики {title}",
             'timeline.by_x'                => "автор {1}",
 
             // Timeline filters
             'timeline.filters.new_tickets'           => "Новые заявки",
-            'timeline.filters.tickets_opened_closed' => "Tickets open/closed",
-            'timeline.filters.ticket_updates'        => "Ticket updates",
-            'timeline.filters.ticket_comments'       => "Ticket comments",
-            'timeline.filters.ticket_moves'          => "Ticket migrations",
+            'timeline.filters.tickets_opened_closed' => "Изменение статусов заявок",
+            'timeline.filters.ticket_updates'        => "Обновления заявок",
+            'timeline.filters.ticket_comments'       => "Новые комментарии",
+            'timeline.filters.ticket_moves'          => "Движение заявок",
             'timeline.filters.milestones'            => "Milestones",
-            'timeline.filters.wiki_pages'            => "Wiki pages",
+            'timeline.filters.wiki_pages'            => "Станицы вики",
 
             // Help
             'help.slug'                     => "A lower case alpha-numerical string with the exception of dashes, underscores and periods to be used in the URL.",

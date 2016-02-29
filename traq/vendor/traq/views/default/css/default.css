@@ -1380,21 +1380,50 @@ table.ticket_listing tr:hover td, table.ticket_listing tr:hover:nth-child(even) 
     border-top-color: #ffffff
 }
 
+
+.timeline.content {
+    position: relative;
+}
+
 .timeline.content h3 {
     margin-top: 15px
 }
 
+.timeline.content dl {
+    padding-right: 250px;
+}
+
 .timeline.content dl dt {
-    font-weight: normal
+    font-weight: normal;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline.content dl dd {
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+.timeline.content dl dt .button_delete {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 16px;
+    bottom: auto;
 }
 
 .timeline.content dl dt .time {
-    color: #777
+    display: block;
+    width: 30px;
+    float: left;
+    margin-right: 5px;
 }
 
 .timeline.content .timeline_filters {
-    width: 180px;
-    float: right
+    width: 222px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
 }
 
 .timeline.content fieldset {

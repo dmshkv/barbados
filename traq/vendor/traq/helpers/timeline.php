@@ -57,7 +57,7 @@ function timeline_filters($filter = null)
         'ticket_updates'        => array('ticket_updated'),
         'ticket_comments'       => array('ticket_comment'),
         'ticket_moves'          => array('ticket_moved_from', 'ticket_moved_to'),
-        'milestones'            => array('milestone_completed', 'milestone_cancelled'),
+        // 'milestones'            => array('milestone_completed', 'milestone_cancelled'),
         'wiki_pages'            => array('wiki_page_created', 'wiki_page_edited')
     );
 
