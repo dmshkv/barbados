@@ -176,7 +176,9 @@ class Locale
      */
     public function calculate_numeral($numeral)
     {
-        return ($numeral > 1 or $numeral < -1 or $numeral == 0) ? 1 : 0;
+		$cases = array (2, 0, 1, 1, 1, 2);
+		$toReturn = ($numeral%100 > 4 && $numeral%100 < 20) ? 2 : $cases[($numeral%10 < 5) ? $numeral%10 : 5];
+		return $toReturn;
     }
 
     /**
@@ -229,6 +231,7 @@ class Locale
             $translation = str_replace(array("{{$key}}"), $val, $translation);
         }
 
+
         // Match plural:n,{x, y}
         if (preg_match_all("/{plural:(?<value>-{0,1}\d+)(,|, ){(?<replacements>.*?)}}/i", $translation, $matches)) {
             foreach($matches[0] as $id => $match) {
@@ -242,6 +245,7 @@ class Locale
 
                 // Check what replacement to use...
                 $replacement_id = $this->calculate_numeral($value);
+
                 if ($replacement_id !== false) {
                     $translation = str_replace($match, $replacements[$replacement_id], $translation);
                 }

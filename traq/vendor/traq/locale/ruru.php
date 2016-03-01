@@ -72,7 +72,7 @@ class ruRU extends \traq\libraries\Locale
             'project'          => "Проект",
             'never'            => "Никогда",
             'votes'            => "Голоса",
-            'update_ticket'    => "Обновить дело",
+            'update_ticket'    => "Обновить заявку",
             'comment'          => "Комментарий",
             'update'           => "Обновить",
             'x_by_x'           => "{1} из {2}",
@@ -193,7 +193,7 @@ class ruRU extends \traq\libraries\Locale
             'ticket_types' => "Типы заявок",
 
             // Tickets
-            'id'                    => "ID",
+            'id'                    => "Номер",
             'ticket'                => "Заявка",
             'new_ticket'            => "Новая заявка",
             'summary'               => "Заголовок",
@@ -206,7 +206,7 @@ class ruRU extends \traq\libraries\Locale
             'updates'               => "Обновления",
             'severity'              => "Строгость",
             'assigned_to'           => "Исполнитель",
-            'reported'              => "Reported",
+            'reported'              => "Создана",
             'priority'              => "Приоритет",
             'edit_ticket'           => "Редактировать заявку",
             'no_votes'              => "Голосов нет",
@@ -222,7 +222,7 @@ class ruRU extends \traq\libraries\Locale
 
             // Ticket columns
             'columns'    => "Колонки",
-            'ticket_id'  => "ID заявки",
+            'ticket_id'  => "Номер заявки",
             'created_at' => "Создана",
             'updated_at' => "Обновлена",
 
@@ -262,7 +262,7 @@ class ruRU extends \traq\libraries\Locale
             'xs_profile'           => "Профиль пользователя {1}",
             'assigned_tickets'     => "Назначено",
             'tickets_created'      => "Создано",
-            'ticket_updates'       => "Обновлено",
+            'ticket_updates'       => "Обновлена",
             'information'          => "Информация",
             'options'              => "Опции",
             'watch_my_new_tickets' => "Следить за новыми заявками",
@@ -380,16 +380,16 @@ class ruRU extends \traq\libraries\Locale
 
             // Time
             'time'          => "Time",
-            'time.ago'      => "{1} ago",
+            'time.ago'      => "{1} назад",
             'time.from_now' => "{1} from now",
-            'time.x_and_x'  => "{1} and {2}",
-            'time.x_second' => "{1} {plural:{1}, {second|seconds}}",
-            'time.x_minute' => "{1} {plural:{1}, {minute|minutes}}",
-            'time.x_hour'   => "{1} {plural:{1}, {hour|hours}}",
-            'time.x_day'    => "{1} {plural:{1}, {day|days}}",
-            'time.x_week'   => "{1} {plural:{1}, {week|weeks}}",
-            'time.x_month'  => "{1} {plural:{1}, {month|months}}",
-            'time.x_year'   => "{1} {plural:{1}, {year|years}}",
+            'time.x_and_x'  => "{1} и {2}",
+            'time.x_second' => "{1} {plural:{1}, {секунду|секунды|секунд}}",
+            'time.x_minute' => "{1} {plural:{1}, {минуту|минуты|минут}}",
+            'time.x_hour'   => "{1} {plural:{1}, {час|часа|часов}}",
+            'time.x_day'    => "{1} {plural:{1}, {день|дня|дней}}",
+            'time.x_week'   => "{1} {plural:{1}, {неделю|недели|недель}}",
+            'time.x_month'  => "{1} {plural:{1}, {месяц|месяца|месяцев}}",
+            'time.x_year'   => "{1} {plural:{1}, {год|года|лет}}",
 
             // Timeline
             'timeline'                     => "Таймлайн",
@@ -458,7 +458,7 @@ class ruRU extends \traq\libraries\Locale
 
             // Ticket history
             'ticket_history' => array(
-                'Ticket History',
+                'История заявки',
 
                 // Most fields
                 'x_from_x_to_x'    => "Changed {1} from {2} to {3}",

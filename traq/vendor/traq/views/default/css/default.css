@@ -1138,7 +1138,12 @@ input[type=text], input[type=password], input[type=email], input[type=url] {
 #ticket_info {
     background: #ffffdd;
     border-bottom: 2px solid #dddd99;
-    padding: 5px
+    padding: 10px
+}
+
+#ticket_info .properties {
+	padding-right: 250px;
+	margin: 10px 0;
 }
 
 #ticket_info .ticket_actions {
@@ -1146,21 +1151,24 @@ input[type=text], input[type=password], input[type=email], input[type=url] {
 }
 
 #ticket_info .properties .property {
-    width: 227px;
-    margin-right: 10px;
+    width: 320px;
+    margin-right: 30px;
+    margin-bottom: 7px;
     float: left;
-    border-bottom: 1px solid #dd9
+	font-size: 13px;
 }
 
 #ticket_info .properties .property label {
-    color: #663
+	display: inline-block;
+    width: 120px;
 }
 
-#ticket_info .properties .property div.value, #ticket_info .properties .property span.value, #ticket_info .properties .property ul.value {
-    float: right
+#ticket_info .properties .property .value {
+    display: inline-block;
+    width: 190px;
 }
 
-#ticket_info .properties .property:nth-child(4n) {
+#ticket_info .properties .property:nth-child(2n) {
     margin-right: 0px
 }
 
@@ -1175,16 +1183,16 @@ input[type=text], input[type=password], input[type=email], input[type=url] {
     display: inline
 }
 
-#ticket_info #description h3, #ticket_info #attachments h3, #ticket_info #tasks h3 {
-    margin-top: 5px;
-    display: block;
-    font-weight: bold;
-    color: #663;
-    border-bottom: 1px solid #dd9;
-    padding-bottom: 2px
+#ticket_info #description {
+	margin-bottom: 20px;
 }
 
-#ticket_info #attachments ul, #ticket_info #tasks ul {
+#ticket_info #description div.body {
+	font-size: 13px;
+}
+
+#ticket_info #attachments ul,
+#ticket_info #tasks ul {
     margin: 0
 }
 
@@ -1203,12 +1211,10 @@ input[type=text], input[type=password], input[type=email], input[type=url] {
 }
 
 #ticket_info h3 {
-    border-bottom: 1px solid #dddd99;
-    color: #666633;
     margin: 0;
     margin-bottom: 5px;
-    font-size: 100%;
-    font-weight: normal
+    font-size: 18px;
+    font-weight: normal;
 }
 
 
