@@ -252,7 +252,7 @@ class ruRU extends \traq\libraries\Locale
             'logout'               => "Выйти",
             'usercp'               => "Личный кабинет",
             'admincp'              => "Админка",
-            'register'             => "Регистрация",
+            'register'             => "Регистрация_1",
             'username'             => "Логин",
             'password'             => "Пароль",
             'old_password'         => "Старый пароль",
